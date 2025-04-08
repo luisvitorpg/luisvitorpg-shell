@@ -1,7 +1,7 @@
 Teste de terminal de shell. 
 Por enquanto tem varios problemas, como acesso negado ao usar "cd .." (mesmo com sudo), o "exit" não estar funcionando, entre outros.
 
-Fiz isso por distracao, que funcionem na maquina de vcs. xD
+Fiz isso mais pra distrair, espero que funcionem na maquina de vcs. xD
 
 Como usar?
 
