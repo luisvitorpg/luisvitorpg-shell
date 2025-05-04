@@ -6,19 +6,30 @@
  */
 
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <stdbool.h>
 
 int main() {
-	char command[50];
-	while (command != "exit") {
-		printf("shell # ");
-		scanf("%s", &command);
+	char *command;
+	char *username = getlogin();
+	bool isRunning = true;
+	while (isRunning == true) {
+		if (username != "root") {
+			printf("shell $ ");
+		} else {
+			printf("shell #");
+		}
+		scanf("%s", command);
 		if (command == "exit") {
-			printf("EXIT SHELL\n");
+			printf("EXIT\n");
+			isRunning = false;
 			break;
 		}
-		system(command);
+		else {
+			system(command);
+			printf("\n");
+		}
 	}
 	return 0;
 }
