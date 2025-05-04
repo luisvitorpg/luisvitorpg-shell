@@ -2,3 +2,8 @@ Teste de terminal de shell.
 Por enquanto tem varios problemas, como acesso negado ao usar cd .. (nao testei com sudo), o "exit" não estar funcionando, entre outros.
 
 Fiz isso por distracao, que funcionem na maquina de vcs. xD
+
+Como usar?
+Simples, use o seguinte comando:
+  make
+E está pronto.
